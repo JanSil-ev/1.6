@@ -1,4 +1,10 @@
-let x = window.matchMedia("(max-width: 321px)");
+// const swiper = new Swiper('.mySwiper', {
+//   speed: 400,
+//   spaceBetween: 2,
+//   centeredSlides: true
+// });
+
+let x = window.matchMedia("(max-width: 768px)");
 myFunction(x);
 function myFunction(x) {
   if (x.matches) {
@@ -6,6 +12,7 @@ function myFunction(x) {
       pagination: {
         el: ".swiper-pagination",
       },
+      centeredSlides: false
     });
   } else {
     document.querySelector(".swiper-wrapper").classList.add("brands");
