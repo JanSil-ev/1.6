@@ -1,0 +1,76 @@
+@mixin reset-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin text-styles($font-size, $line-height, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+.disclaimer {
+  background-color: #f8f8f8;
+  padding: 20px 20px 40px 0;
+  margin-left: 32px;
+  border-radius: 8px;
+  text-align: left;
+
+  &__content {
+    margin-bottom: 20px;
+
+    p {
+      @include text-styles(14px, 1.5, #333);
+      margin: 0;
+    }
+  }
+
+  &__button {
+    @include reset-button;
+    @include text-styles(16px, 1.5, #000000);
+    text-align: left;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -40px;
+      width: 30px;
+      height: 30px;
+      background: url(../img/onward.svg) no-repeat center/cover;
+      transform: translate(-50%, -50%);
+      transition: width 0.3s ease, height 0.3s ease;
+      z-index: 0;
+    }
+
+    &:active::before {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      background-color: darken(#dddddd, 10%);
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1439px) {
+  .disclaimer {
+    &__content {
+      width: 60%;
+      text-wrap: balance;
+    }
+  }
+}

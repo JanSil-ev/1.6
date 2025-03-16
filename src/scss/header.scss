@@ -1,0 +1,105 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.header {
+  height: 88px;
+  width: 100%;
+  border-bottom: 1px solid #d9fff5;
+
+  &__nav {
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__button-group {
+    display: flex;
+    align-items: center;
+    width: 15rem;
+
+    &--left {
+      justify-content: space-evenly;
+    }
+
+    &--right {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.icon {
+  border: initial;
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &--burger {
+    background-image: url(../img/burger.svg);
+  }
+
+  &--divider {
+    background-image: url(../img/divider.svg);
+    width: 2px;
+  }
+
+  &--call {
+    background-image: url(../img/call.svg);
+  }
+
+  &--chat {
+    background-image: url(../img/chat.svg);
+  }
+
+  &--profile {
+    background-image: url(../img/profile.svg);
+  }
+
+  &--repair {
+    background-image: url(../img/repair.svg);
+  }
+
+  &--checkstatus {
+    background-image: url(../img/checkstatus.svg);
+  }
+  &:hover {
+    transform: scale();
+  }
+}
+
+@media (max-width: 768px) {
+  .header__button-right {
+    min-width: 90px;
+    gap: 1rem;
+  }
+  .round-icon--divider {
+    margin-right: auto;
+    margin-left: 10px;
+  }
+
+  .header__button-icon--m-size {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .header {
+    &__nav {
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+  }
+
+  .header__button-group--right {
+    justify-content: space-between;
+  }
+}

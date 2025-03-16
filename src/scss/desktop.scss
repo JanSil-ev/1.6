@@ -1,0 +1,43 @@
+@media (min-width: 1439px) {
+  .desktop {
+    display: flex;
+  }
+  .header {
+    display: none;
+  }
+  .side-nav {
+    display: flex;
+    position: relative;
+    width: 320px;
+    margin-bottom: auto;
+    padding-top: 40px;
+    height: 50vh;
+
+    &::after {
+      content: none;
+    }
+    &__list {
+      margin: 0;
+    }
+  }
+  .main {
+    padding-top: 20px;
+  }
+  .brands-section__slide:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  .callback__close-button {
+    position: absolute;
+    left: -80px;
+    top: 10px;
+    z-index: 11;
+  }
+
+  .feedback__close-button {
+    position: absolute;
+    left: -80px;
+    top: 10px;
+    z-index: 11;
+  }
+}

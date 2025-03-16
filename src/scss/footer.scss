@@ -1,0 +1,98 @@
+@mixin text-styles($font-size, $line-height, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-top: solid 1px rgba(217, 255, 245, 1);
+
+  &__copyright {
+    @include text-styles(14px, 1.5, #7e7e82);
+  }
+
+  &__developed {
+    margin-bottom: 10px;
+
+    &__copyright {
+      @include text-styles(14px, 1.5, #7e7e82);
+    }
+
+    &__text {
+      @include text-styles(14px, 1.5, #7e7e82);
+      margin: 0;
+    }
+  }
+
+  &__policy {
+    @include text-styles(14px, 1.5, #7e7e82);
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: darken(#007bff, 10%);
+    }
+  }
+
+  &__disclaimer {
+    @include text-styles(12px, 1.5, #7e7e82);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1439px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    &__developed {
+      text-align: left;
+
+      &__text {
+        text-wrap: nowrap;
+      }
+    }
+
+    &__policy {
+      text-wrap: nowrap;
+    }
+
+    &__disclaimer {
+      text-align: right;
+      max-width: 200px;
+      text-wrap: balance;
+    }
+  }
+}
+
+@media (min-width: 1439px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    &__developed {
+      text-align: left;
+
+      &__text {
+        text-wrap: nowrap;
+      }
+    }
+
+    &__policy {
+      text-wrap: nowrap;
+    }
+
+    &__disclaimer {
+      text-align: right;
+      max-width: 200px;
+      text-wrap: balance;
+    }
+  }
+  .price-table {
+    width: 95%;
+  }
+}
