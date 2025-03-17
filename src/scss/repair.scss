@@ -129,7 +129,7 @@ section::-webkit-scrollbar {
   }
 }
 
-@media (min-width: 767px) and (max-width: 1439px) {
+@media (min-width: 767px) and (max-width: 1366px) {
   .repair-section {
     &__card {
       position: relative;
@@ -161,7 +161,7 @@ section::-webkit-scrollbar {
   }
 }
 
-@media (min-width: 1439px) {
+@media (min-width: 1366px) {
   .repair-section__slide:nth-last-child(-n + 5) {
     display: none;
   }
