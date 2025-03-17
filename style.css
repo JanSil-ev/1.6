@@ -60,7 +60,7 @@ button {
   .header__button-icon--m-size {
     display: none; } }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1366px) {
   .header__nav {
     justify-content: space-between;
     padding: 0 20px; }
@@ -338,7 +338,7 @@ li {
     width: 100vw;
     height: auto; }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1366px) {
   .content {
     display: flex;
     height: 208px; }
@@ -348,7 +348,7 @@ li {
     .content__image {
       padding-top: 0; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .content {
     display: flex;
     height: auto; }
@@ -485,7 +485,7 @@ section::-webkit-scrollbar {
   .brands-section__toggle {
     display: none; } }
 
-@media (min-width: 767px) and (max-width: 1439px) {
+@media (min-width: 767px) and (max-width: 1366px) {
   .brands-high {
     width: 224px; }
   .brands-section__card {
@@ -579,7 +579,7 @@ section::-webkit-scrollbar {
   .repair-section__toggle {
     display: none; } }
 
-@media (min-width: 767px) and (max-width: 1439px) {
+@media (min-width: 767px) and (max-width: 1366px) {
   .repair-section__card {
     position: relative;
     align-items: flex-start;
@@ -601,7 +601,7 @@ section::-webkit-scrollbar {
     flex-wrap: wrap;
     gap: 20px; } }
 
-@media (min-width: 1439px) {
+@media (min-width: 1366px) {
   .repair-section__slide:nth-last-child(-n + 5) {
     display: none; }
   .swiper-wrapper {
@@ -771,7 +771,7 @@ section::-webkit-scrollbar {
     .disclaimer__button:hover {
       background-color: #c4c4c4; }
 
-@media (min-width: 767px) and (max-width: 1439px) {
+@media (min-width: 767px) and (max-width: 1366px) {
   .disclaimer__content {
     width: 60%;
     text-wrap: balance; } }
@@ -812,7 +812,7 @@ section::-webkit-scrollbar {
     color: #7e7e82;
     margin-bottom: 0; }
 
-@media (min-width: 767px) and (max-width: 1439px) {
+@media (min-width: 767px) and (max-width: 1366px) {
   .footer {
     flex-direction: row;
     justify-content: space-between; }
@@ -845,7 +845,7 @@ section::-webkit-scrollbar {
   .price-table {
     width: 95%; } }
 
-@media (min-width: 1439px) {
+@media (min-width: 1366px) {
   .desktop {
     display: flex; }
   .header {
