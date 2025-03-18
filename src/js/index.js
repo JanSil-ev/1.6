@@ -22,14 +22,12 @@ function myFunction(x) {
       centeredSlides: false
     })
   } else {
-    document.querySelector('.swiper-wrapper').classList.add('brands')
-    document.querySelector('.swiper-wrapper').classList.remove('swiper-wrapper')
-
-    document.querySelector('.swiper').classList.remove('swiper', 'mySwiper')
-
-    document.querySelectorAll('.swiper-slide').forEach((el) => {
-      el.classList.add('brands-high')
-      el.classList.remove('swiper-slide')
-    })
+    // document.querySelector('.swiper-wrapper').classList.add('brands')
+    // document.querySelector('.swiper-wrapper').classList.remove('swiper-wrapper')
+    // document.querySelector('.swiper').classList.remove('swiper', 'mySwiper')
+    // document.querySelectorAll('.swiper-slide').forEach((el) => {
+    //   el.classList.add('brands-high')
+    //   el.classList.remove('swiper-slide')
+    // })
   }
 }

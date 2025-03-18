@@ -1,7 +1,7 @@
 document.getElementById('hideButton').addEventListener('click', function () {
   const child = window.matchMedia('(min-width: 768px)').matches ? 3 : 5
   const brandButtons = document.querySelectorAll(
-    `.brands-high:nth-last-child(-n+${child})`
+    `.brands-section__slide:nth-last-child(-n+${child})`
   )
 
   brandButtons.forEach(function (button) {
