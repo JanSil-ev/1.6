@@ -47,6 +47,13 @@ button {
     background-image: url(../img/burger.svg);
   }
 
+  &--logo {
+    height: 51px;
+    width: 97px;
+    background: url('../img/logo.svg') no-repeat;
+    margin-right: 1rem;
+  }
+
   &--divider {
     background-image: url(../img/divider.svg);
     width: 2px;
